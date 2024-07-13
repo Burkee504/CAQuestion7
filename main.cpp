@@ -1,0 +1,16 @@
+#include "mbed.h"
+
+// CA question 7 Embedded systems. Turn on led1 every 2 seconfs and led2 every 5 
+DigitalOut led1(LED1); 
+DigitalOut led2(LED2); 
+int main()
+{
+    while (1) { 
+        led1= !led1;
+        wait(2.0)
+        led2= !led2; 
+        wait(5.0)
+
+    }
+}
+
