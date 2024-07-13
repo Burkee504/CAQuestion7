@@ -6,10 +6,10 @@ DigitalOut led2(LED2);
 int main()
 {
     while (1) { 
-        led1= !led1;
-        wait(2.0)
-        led2= !led2; 
-        wait(5.0)
+        led1 = !led1;
+        osDelay(0.2);
+        led2 = !led2; 
+        osDelay(0.5);
 
     }
 }
